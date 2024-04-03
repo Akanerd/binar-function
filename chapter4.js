@@ -1,18 +1,19 @@
 let result
-let userInput 
 let check
-
+console.log("----------------------------------")
 function countLetter(str){
     result = str.length
     return result
 }
 console.log("Hasilnya: " + countLetter('Hafizh'))
+console.log("----------------------------------")
 
 function countWord(str){
     result = str.trim().split(/\s+/)
     return result.length
 }
 console.log("Hasilnya: " + countWord('Halo saya Hafizh'))
+console.log("----------------------------------")
 
 function calculate(num1,num2,operation){
    let operations = {
@@ -29,6 +30,7 @@ console.log("Hasilnya: " + calculate(5,3,'+'))
 console.log("Hasilnya: " + calculate(5,3,'-'))
 console.log("Hasilnya: " + calculate(5,3,'*'))
 console.log("Hasilnya: " + calculate(5,0,'/'))
+console.log("----------------------------------")
 
 
 function checkPalindrom(str) {
@@ -39,6 +41,7 @@ function checkPalindrom(str) {
 
 console.log("Hasilnya: " + checkPalindrom('katak'))
 console.log("Hasilnya: " + checkPalindrom('hafizh'))
+console.log("----------------------------------")
 
 function countTotal(disc, shop) {
    result = shop - (disc/100 * shop )
