@@ -9,7 +9,7 @@ console.log("Hasilnya Jumlah Alphabet pada kata: " + countLetter('Hafizh'))
 console.log("----------------------------------")
 
 function countWord(str){
-    result = str.trim().split(/\s+/)
+    result = str.trim().split(" ")
     return result.length
 }
 console.log("Hasilnya Jumlah kalimat: " + countWord('Halo saya Hafizh'))
