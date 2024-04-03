@@ -20,7 +20,7 @@ function calculate(num1,num2,operation){
         '+': (a, b) => a + b,
         '-': (a, b) => a - b,
         '*': (a, b) => a * b,
-        '/': (a, b) => (b !== 0 ? a / b : "Error: tidak bisa dibagi dengan 0"),
+        '/': (a, b) => (a !== 0 && b !== 0 ? a / b : "Error: tidak bisa dibagi dengan 0"),
     }
 
    result = operations[operation]
@@ -30,6 +30,8 @@ console.log("Hasil Operasi +: " + calculate(5,3,'+'))
 console.log("Hasil Operasi -: " + calculate(5,3,'-'))
 console.log("Hasil Operasi *: " + calculate(5,3,'*'))
 console.log("Hasil Operasi /: " + calculate(5,0,'/'))
+console.log("Hasil Operasi /: " + calculate(0,1,'/'))
+console.log("Hasil Operasi /: " + calculate(15,3,'/'))
 console.log("----------------------------------")
 
 
