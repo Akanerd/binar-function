@@ -5,14 +5,14 @@ function countLetter(str){
     result = str.length
     return result
 }
-console.log("Hasilnya: " + countLetter('Hafizh'))
+console.log("Hasilnya Jumlah Alphabet pada kata: " + countLetter('Hafizh'))
 console.log("----------------------------------")
 
 function countWord(str){
     result = str.trim().split(/\s+/)
     return result.length
 }
-console.log("Hasilnya: " + countWord('Halo saya Hafizh'))
+console.log("Hasilnya Jumlah kalimat: " + countWord('Halo saya Hafizh'))
 console.log("----------------------------------")
 
 function calculate(num1,num2,operation){
@@ -26,10 +26,10 @@ function calculate(num1,num2,operation){
    result = operations[operation]
    return result(num1, num2);
 }
-console.log("Hasilnya: " + calculate(5,3,'+'))
-console.log("Hasilnya: " + calculate(5,3,'-'))
-console.log("Hasilnya: " + calculate(5,3,'*'))
-console.log("Hasilnya: " + calculate(5,0,'/'))
+console.log("Hasil Operasi +: " + calculate(5,3,'+'))
+console.log("Hasil Operasi -: " + calculate(5,3,'-'))
+console.log("Hasil Operasi *: " + calculate(5,3,'*'))
+console.log("Hasil Operasi /: " + calculate(5,0,'/'))
 console.log("----------------------------------")
 
 
@@ -39,8 +39,8 @@ function checkPalindrom(str) {
     return check
 }
 
-console.log("Hasilnya: " + checkPalindrom('katak'))
-console.log("Hasilnya: " + checkPalindrom('hafizh'))
+console.log("Hasil check paliandrom jika true: " + checkPalindrom('katak'))
+console.log("Hasil check paliandrom jika false: " + checkPalindrom('hafizh'))
 console.log("----------------------------------")
 
 function countTotal(disc, shop) {
@@ -48,4 +48,4 @@ function countTotal(disc, shop) {
    return result  
 }
 
-console.log("Hasilnya: " + countTotal(10, 10000))
+console.log("Hasil Total belanja setelah discount: " + countTotal(10, 10000))
